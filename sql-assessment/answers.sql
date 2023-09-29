@@ -28,7 +28,7 @@ SELECT campaign_info.name, (SUM(website_revenue.revenue) /  SUM(marketing_data.c
 FROM campaign_info JOIN marketing_data ON campaign_info.id = marketing_data.campaign_id
 JOIN website_revenue ON campaign_info.id = website_revenue.campaign_id
 GROUP BY name;
---I utilzied this query to determine cost per conversion to base my decision on which campaign was most succesful. There are many different ways to determine the success of an ad this is simply
+--I utilzied this query to determine cost per conversion to base my decision on which campaign was most efficient. There are many different ways to determine the efficiency of an ad this is simply
 --the method I chose. After running this query I determinned that Campaign 2 was most successful, providing a revenue to conversion rate of 17.07. Campaign 3, which I determinned to be the largest
 --had, by far, the most revneue but its revenue to conversion rate was the highest at 31.06.
 
